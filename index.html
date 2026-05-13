@@ -286,7 +286,8 @@ p.lead { font-size: clamp(19px, 2.2vw, 24px); line-height: 1.45; color: var(--in
 .pipeline-step:first-child { border-radius: var(--r-lg) 0 0 var(--r-lg); }
 .pipeline-step:last-child { border-radius: 0 var(--r-lg) var(--r-lg) 0; }
 .pipeline-step + .pipeline-step { border-left: none; }
-.pipeline-step:hover { transform: translateY(-4px); }
+.pipeline-step:hover { transform: translateY(-4px); z-index: 1; }
+.pipeline-step:hover .pipeline-arrow { z-index: 3; }
 .pipeline-num {
   font-family: var(--font-display); font-size: 14px; font-weight: 700;
   width: 28px; height: 28px; border-radius: 9999px;
@@ -297,7 +298,7 @@ p.lead { font-size: clamp(19px, 2.2vw, 24px); line-height: 1.45; color: var(--in
   position: absolute; right: -14px; top: 50%; transform: translateY(-50%);
   width: 28px; height: 28px; background: var(--paper); border: 2.5px solid var(--ink);
   border-radius: 9999px; display: flex; align-items: center; justify-content: center;
-  font-size: 14px; font-weight: 700; z-index: 2; color: var(--ink);
+  font-size: 14px; font-weight: 700; z-index: 10; color: var(--ink);
 }
 
 /* ── APPLY BOX ── */
@@ -1263,6 +1264,116 @@ p.lead { font-size: clamp(19px, 2.2vw, 24px); line-height: 1.45; color: var(--in
       <p>On ne g&egrave;re pas &laquo; les r&eacute;seaux sociaux &raquo;. On construit <strong>6 m&eacute;dias dans le m&eacute;dia</strong>, chacun avec sa grille, son ton, ses formats propri&eacute;taires. L'audience LinkedIn ne voit pas la m&ecirc;me chose que l'audience TikTok &mdash; mais les annonceurs ach&egrave;tent le reach total.</p>
     </div>
   </div>
+</section>
+
+<!-- ═══════════ SLIDE 08b — RECYCLAGE DE CONTENU ═══════════ -->
+<section class="slide slide--dark" id="recyclage">
+  <span class="slide-num">09</span>
+  <div class="slide-inner">
+    <p class="eyebrow reveal">&mdash; Distribution intelligente</p>
+    <h2 class="reveal reveal-d1">1 contenu source.<br><span style="color:var(--rainbow-yellow)">10+ formats</span> distribu&eacute;s.</h2>
+    <p class="lead mt-16 reveal reveal-d2" style="max-width:750px;color:rgba(255,255,255,0.45)">On ne produit pas un contenu pour un canal. On produit un contenu source, et on le recycle en <strong style="color:#fff">10+ d&eacute;clinaisons natives</strong> sur toutes les plateformes. Chaque pi&egrave;ce renvoie vers les autres.</p>
+
+    <div class="mt-48 reveal reveal-d2" style="display:flex;flex-direction:column;align-items:center;gap:0">
+      <!-- Source -->
+      <div style="background:var(--rainbow-yellow);color:var(--ink);border:2.5px solid var(--ink);border-radius:var(--r-xl);padding:24px 36px;text-align:center;box-shadow:var(--shadow-pop-lg);position:relative;z-index:2">
+        <div style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:6px">Contenu source</div>
+        <div style="font-family:var(--font-display);font-weight:700;font-size:28px;letter-spacing:-0.03em">Podcast / Interview / Vid&eacute;o longue</div>
+      </div>
+
+      <!-- Arrow down -->
+      <div style="width:3px;height:32px;background:rgba(255,255,255,0.15)"></div>
+      <div style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.12em;color:rgba(255,255,255,0.3);padding:4px 0">RECYCL&Eacute; EN</div>
+      <div style="width:3px;height:16px;background:rgba(255,255,255,0.15)"></div>
+
+      <!-- Outputs grid -->
+      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px;width:100%">
+        <div style="background:rgba(255,255,255,0.06);border:2px solid rgba(255,255,255,0.1);border-radius:var(--r-lg);padding:18px 14px;text-align:center">
+          <div style="font-size:28px;margin-bottom:8px">&#128196;</div>
+          <div style="font-family:var(--font-display);font-weight:700;font-size:15px;color:#fff">Article SEO</div>
+          <p style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:6px">Transcription enrichie, optimis&eacute;e mots-cl&eacute;s, publi&eacute;e sur le site</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.06);border:2px solid rgba(255,255,255,0.1);border-radius:var(--r-lg);padding:18px 14px;text-align:center">
+          <div style="font-size:28px;margin-bottom:8px">&#127912;</div>
+          <div style="font-family:var(--font-display);font-weight:700;font-size:15px;color:#fff">Carrousel</div>
+          <p style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:6px">5-8 slides, points cl&eacute;s extraits, lien vers le podcast</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.06);border:2px solid rgba(255,255,255,0.1);border-radius:var(--r-lg);padding:18px 14px;text-align:center">
+          <div style="font-size:28px;margin-bottom:8px">&#127909;</div>
+          <div style="font-family:var(--font-display);font-weight:700;font-size:15px;color:#fff">Clips courts</div>
+          <p style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:6px">3-5 extraits 30-60s pour Reels, TikTok, Shorts</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.06);border:2px solid rgba(255,255,255,0.1);border-radius:var(--r-lg);padding:18px 14px;text-align:center">
+          <div style="font-size:28px;margin-bottom:8px">&#128172;</div>
+          <div style="font-family:var(--font-display);font-weight:700;font-size:15px;color:#fff">Citations</div>
+          <p style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:6px">Quotes isol&eacute;es sur fond design. LinkedIn, X, stories</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.06);border:2px solid rgba(255,255,255,0.1);border-radius:var(--r-lg);padding:18px 14px;text-align:center">
+          <div style="font-size:28px;margin-bottom:8px">&#128231;</div>
+          <div style="font-family:var(--font-display);font-weight:700;font-size:15px;color:#fff">Newsletter</div>
+          <p style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:6px">Synth&egrave;se + lien podcast + carrousel embarqu&eacute;</p>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px;width:100%;margin-top:10px">
+        <div style="background:rgba(255,255,255,0.06);border:2px solid rgba(255,255,255,0.1);border-radius:var(--r-lg);padding:18px 14px;text-align:center">
+          <div style="font-size:28px;margin-bottom:8px">&#128240;</div>
+          <div style="font-family:var(--font-display);font-weight:700;font-size:15px;color:#fff">Post LinkedIn</div>
+          <p style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:6px">Post long, take &eacute;ditoriale, renvoie vers l'article</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.06);border:2px solid rgba(255,255,255,0.1);border-radius:var(--r-lg);padding:18px 14px;text-align:center">
+          <div style="font-size:28px;margin-bottom:8px">&#128293;</div>
+          <div style="font-family:var(--font-display);font-weight:700;font-size:15px;color:#fff">Thread X</div>
+          <p style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:6px">8-12 tweets, d&eacute;cryptage fil rouge, lien final</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.06);border:2px solid rgba(255,255,255,0.1);border-radius:var(--r-lg);padding:18px 14px;text-align:center">
+          <div style="font-size:28px;margin-bottom:8px">&#128247;</div>
+          <div style="font-family:var(--font-display);font-weight:700;font-size:15px;color:#fff">Post image</div>
+          <p style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:6px">Visuel simple + stat cl&eacute; ou newsjacking</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.06);border:2px solid rgba(255,255,255,0.1);border-radius:var(--r-lg);padding:18px 14px;text-align:center">
+          <div style="font-size:28px;margin-bottom:8px">&#127911;</div>
+          <div style="font-family:var(--font-display);font-weight:700;font-size:15px;color:#fff">Audiogramme</div>
+          <p style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:6px">Extrait audio + waveform anim&eacute;e. Facebook, LinkedIn</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.06);border:2px solid rgba(255,255,255,0.1);border-radius:var(--r-lg);padding:18px 14px;text-align:center">
+          <div style="font-size:28px;margin-bottom:8px">&#128200;</div>
+          <div style="font-family:var(--font-display);font-weight:700;font-size:15px;color:#fff">Chiffre cl&eacute;</div>
+          <p style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:6px">Data viz isol&eacute;e. Format ultra-partageable, stories + feed</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Circularité -->
+    <div class="mt-32 reveal reveal-d3" style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center">
+      <div style="background:rgba(255,255,255,0.06);border:2px solid rgba(255,255,255,0.1);border-radius:var(--r-full);padding:14px 24px;display:flex;align-items:center;gap:10px">
+        <span style="color:var(--rainbow-yellow)">&#127912; &rarr; &#127911;</span>
+        <span style="font-size:13px;color:rgba(255,255,255,0.6)">Le carrousel renvoie vers le podcast</span>
+      </div>
+      <div style="background:rgba(255,255,255,0.06);border:2px solid rgba(255,255,255,0.1);border-radius:var(--r-full);padding:14px 24px;display:flex;align-items:center;gap:10px">
+        <span style="color:var(--rainbow-green)">&#127909; &rarr; &#128196;</span>
+        <span style="font-size:13px;color:rgba(255,255,255,0.6)">Le clip renvoie vers l'article</span>
+      </div>
+      <div style="background:rgba(255,255,255,0.06);border:2px solid rgba(255,255,255,0.1);border-radius:var(--r-full);padding:14px 24px;display:flex;align-items:center;gap:10px">
+        <span style="color:var(--rainbow-pink)">&#128196; &rarr; &#127912;</span>
+        <span style="font-size:13px;color:rgba(255,255,255,0.6)">L'article embarque le carrousel</span>
+      </div>
+      <div style="background:rgba(255,255,255,0.06);border:2px solid rgba(255,255,255,0.1);border-radius:var(--r-full);padding:14px 24px;display:flex;align-items:center;gap:10px">
+        <span style="color:var(--phantom-violet-200)">&#128172; &rarr; &#127909;</span>
+        <span style="font-size:13px;color:rgba(255,255,255,0.6)">La citation lance le clip</span>
+      </div>
+    </div>
+
+    <div class="mt-32 reveal reveal-d4" style="text-align:center">
+      <div style="display:inline-block;background:var(--rainbow-yellow);color:var(--ink);border:2.5px solid var(--ink);border-radius:var(--r-xl);padding:24px 40px;box-shadow:var(--shadow-pop-lg)">
+        <p style="font-family:var(--font-display);font-weight:700;font-size:24px;letter-spacing:-0.02em">1 production = 10+ contenus = 6 plateformes aliment&eacute;es</p>
+        <p style="font-size:14px;margin-top:6px;color:var(--ink-60)">Chaque pi&egrave;ce renvoie vers les autres. Le trafic circule, l'audience grossit.</p>
+      </div>
+    </div>
+  </div>
+  <svg class="deco-ghost" viewBox="0 0 200 200" fill="none" style="width:200px;height:200px;left:-40px;bottom:40px;color:#fff;opacity:0.05;animation:ghostDiag 3.5s ease-in-out infinite">
+    <path d="M 20 100 A 80 80 0 0 1 180 100 L 180 160 Q 160 182 140 160 Q 120 182 100 160 Q 80 182 60 160 Q 40 182 20 160 Z" fill="currentColor"/>
+  </svg>
 </section>
 
 <!-- ═══════════ SLIDE 08 — GROWTH & DISTRIBUTION ═══════════ -->
